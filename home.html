@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>Home</title>
+<body>
+  <style>
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("sk.jpg") repeat-x center center;
+    background-size: 165%;
+    background-position: center center; 
+    animation: gerak 20s ease-in-out infinite alternate;
+}
+
+@keyframes gerak {
+    from { background-position: center center; }
+    to   { background-position: 1px center; } 
+}
+
+button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+.judul {
+    font-size: 30px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.judul {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    font-size: 25px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.link {
+    background: rgba(0,0,0,0.6);
+    padding: 20px 40px;
+    border-radius: 12px;
+    width: auto;         
+    max-width: 300px;  
+    font-family: Consolas, monospace; 
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;            
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: white;            
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Consolas, monospace;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: cyan;
+}
+</style>
+
+<div class="judul"><font color="white"><center>Welcome To My Website</div>
+<div class="home"><font color="white">
+Selamat datang di website saya, <i>Yusuf Rafif Arkan</i>. Saya membuat website ini untuk memperkenalkan diri saya untuk publik dengan cara menarik. Dengan website yang saya buat ini, saya ingin sedikit berbagi tentang siapa saya, apa hal-hal yang saya sukai, dan hal-hal random apapun tentang saya.
+<p>
+Kalian bisa menekan tombol di kiri bawah untuk melihat; biodata, gallery, dan hobby saya. Terakhir, jika kalian ingin mendengarkan background music saya, bisa menekan tombol di kanan bawah.
+</div>
+
+<div class="link">
+<div class="nav">
+<a href="Biodata.html">>Biodata</a>
+<a href="Gallery.html">>Gallery</a>
+<a href="Hobby.html">>Hobby</a>
+
+</div>
+</div>
+
+<audio id="bgm" src="wuwa.mp3" loop></audio>
+<button onclick="document.getElementById('bgm').play()">Start Musik</button>
+
+</head>
+</body>
+</html>
