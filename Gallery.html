@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Gallery</title>
+<body>
+  <style>
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("carlo.jpeg") repeat-x center center;
+    background-size: 100%;
+    background-position: center center; 
+    animation: goyang 20s ease-in-out infinite alternate;
+}
+
+@keyframes goyang {
+    from { background-position: center center; }
+    to   { background-position: 1px center; } 
+}
+
+.judul {
+    font-size: 30px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.judul {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 10%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    font-size: 25px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.link {
+    background: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: auto;         
+    max-width: 250px;  
+    
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav {
+    margin: 0;
+    font-size: 18px;
+    font-family: Consolas, monospace;
+    line-height: 1.6; 
+}
+
+.portrait {
+       flex: 0 0 30%;
+       max-width: 177px;
+       aspect-ratio: 3/4;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-bottom: 20px;
+}
+
+</style>
+
+<div class="judul"><center>Gallery</div>
+<div class="home">
+<center>Di dalam galeri ini berisi foto-foto random teman-teman saya
+<br></br>
+	<image src="A1.jpeg" class="portrait">
+	<image src="A2.jpeg" class="portrait">
+	<image src="A3.jpeg" class="portrait">
+	<image src="A4.jpeg" class="portrait">
+	<image src="A5.jpeg" class="portrait">
+	<image src="A6.jpeg" class="portrait">
+	<image src="A7.jpeg" class="portrait">
+	<image src="A8.jpeg" class="portrait">
+	<image src="A9.jpeg" class="portrait">
+	<image src="A10.jpeg" class="portrait">
+	<image src="A11.jpeg" class="portrait">
+	<image src="A12.jpeg" class="portrait">
+
+</div>
+
+<div class="link">
+<div class="nav">
+<p><a href="Home.html"><font color="white">Home</a></p>
+
+
+</body>
+</html>

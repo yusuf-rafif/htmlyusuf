@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>Hobby</title>
+<body>
+  <style>
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("sk.jpg") repeat-x center center;
+    background-size: 165%;
+    background-position: center center; 
+    animation: goyang 20s ease-in-out infinite alternate;
+}
+
+@keyframes goyang {
+    from { background-position: center center; }
+    to   { background-position: 1px center; } 
+}
+
+.judul {
+    font-size: 30px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.judul {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 10%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    backdrop-filter: blur(5px);
+    animation: muncul 1s ease;
+
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.home {
+    font-size: 25px;
+    color: white;    
+    font-family: Consolas, monospace; 
+}
+
+.link {
+    background: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: auto;         
+    max-width: 250px;  
+    
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav {
+    margin: 0;
+    font-size: 10px;
+    font-family: Consolas, monospace;
+    line-height: 1.6; 
+}
+
+.tebox {
+    font-size: 10px;
+    font-family: Consolas, monospace;
+    line-height: 1.8; 
+}
+
+.landscape {
+       flex: 0 0 30%;
+       max-width: 45%;
+       aspect-ratio: 16/9;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-bottom: 20px;
+}
+
+</style>
+
+<div class="judul"><center>Hobby</div>
+<div class="tebox">
+<div class="home">
+<center>🎶Mendengarkan Lagu🎶</center></dv>
+<p><h5>Hobi saya adalah mendengarkan lagu. Saya menyukai lagu-lagu di playlist yang saya bikin sendiri di spotify. Salah satu subgenre yang saya sukai adalah <i>phonk</i>. Selain itu, saya juga mendengarkan lagu jpop.</p></h5>
+<image src="phonk.png" class="landscape">
+<image src="jpop.png" class="landscape">
+
+</div>
+
+<div class="link">
+<div class="nav">
+<p><a href="Home.html"><font color="white">Home</a></p>
+
+</body>
+</html>
